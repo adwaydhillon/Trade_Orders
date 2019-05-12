@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Order {
     @Id
     @Column(name="order_Id")
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId;
     private String side = "";
     private String security = "";
