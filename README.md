@@ -28,4 +28,4 @@ This REST API exposes the following endpoints:
 * ```GET        http://localhost:8080/orders/summary``` Will return a an order summary from the DB.
 * ```GET        http://localhost:8080/orders/summary/security?security=<INSERT_SECURITY_NAME>``` Will return a an order summary from the DB on the security passed in as the query parameter.
 * ```GET        http://localhost:8080/orders/summary/fund?security=<INSERT_FUND_NAME>``` Will return a an order summary from the DB on the fund passed in as the query parameter.
-
+* ```DELETE     http://localhost:8080/orders/<INSERT_ORDER_ID>``` Will delete that order from the DB, whose id is passed in as the path variable.
