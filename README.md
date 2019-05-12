@@ -21,4 +21,11 @@ This should build your .jar file in the target folder. Make sure port 8080 is no
 $ java -jar <fileName>.jar
 ```
 
+## API Documentation
+This REST API exposes the following endpoints:
+* ```GET        http://localhost:8080/orders``` Will return a list of all the orders from the DB.
+* ```POST       http://localhost:8080/orders``` Will take a list of order objects in the request body and post them to the DB.
+* ```GET        http://localhost:8080/orders/summary``` Will return a an order summary from the DB.
+* ```GET        http://localhost:8080/orders/summary/security?security=<INSERT_SECURITY_NAME>``` Will return a an order summary from the DB on the security passed in as the query parameter.
+* ```GET        http://localhost:8080/orders/summary/fund?security=<INSERT_FUND_NAME>``` Will return a an order summary from the DB on the fund passed in as the query parameter.
 
