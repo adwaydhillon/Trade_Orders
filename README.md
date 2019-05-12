@@ -1,5 +1,5 @@
 # Trading Orders for Securities
-This Spring application is a maven project. It exposes a rest API that talks to an in memory H2 database to perform some asynchronous order summary analysis of trade orders. An order consists of the following attributes:
+This Spring application is a maven project. It exposes a REST API that talks to an in memory H2 database to perform some asynchronous order summary analysis of trade orders. An order consists of the following attributes:
 * Order Id
 * Side (BUY or SELL)
 * Security
