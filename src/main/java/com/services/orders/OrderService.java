@@ -121,6 +121,12 @@ public class OrderService {
             }
         }
 
+        for (String key : combinableOrdersMap.keySet()) {
+            if (combinableOrdersMap.get(key) > 1) {
+                combinableOrders++;
+            }
+        }
+
         OrderSummary orderSummary = new OrderSummary();
         orderSummary.setNumberOfOrders(orderList.size());
         orderSummary.setAveragePrice(totalPrice / (double)orderList.size());
